@@ -53,7 +53,7 @@ $(document).ready(function(){
 	});
 
 
-	function validdeForms(form){
+	function validateForms(form){
 		$(form).validate({
 			rules: {
 				name: {
@@ -79,9 +79,9 @@ $(document).ready(function(){
 			}
 		});
 	}
-	validdeForms('#consultation-form');
-	validdeForms('#consultation form');
-	validdeForms('#order form');
+	validateForms('#consultation-form');
+	validateForms('#consultation form');
+	validateForms('#order form');
 
 	$('input[name=phone]').mask("+7 (999) 999-99-99");/*маски работают, если в форме не указан type*/
 
@@ -96,9 +96,11 @@ $(document).ready(function(){
 			type: "POST",
 			url: "mailer/smart.php",
 			data: $(this).serialize()
-		}).done(function() {
-			//После того, как условие выше будет выполнено, выполняется условие ниже
+		}).done(function() {//После того, как условие выше будет выполнено, выполняется условие ниже
 			$(this).find("input").val("");
+			$('#consultation, #order').fadeOut();
+			$('.overlay, #thanks').fadeIn('slow');
+
 			$('form').trigger('reset');
 		});
 		return false;
