@@ -106,7 +106,7 @@
 			</div>
 			<form class="feed-form" action="#"><!-- required означает, что данная строка обязательна к заполнению -->
 				<input name="name" required placeholder="Ваше имя" type=text><!-- name обязателен, но названия не могут повторяться в одной и той же форме --><!-- name нужен для того, чтобы на сайте все работало нормально, данный тег нужен для внутренней работы сайта -->
-				<input name="phone" required placeholder="Ваш телефон" type=tel>
+				<input name="phone" required placeholder="Ваш телефон">
 				<input name="email" required placeholder="Ваш E-mail" type=email>
 
 				<!-- <input type="submit" value="Заказать консультацию"> --><!-- Можно кнопку для отправки сделать двумя способами: или инпут или кнопка -->
@@ -897,9 +897,9 @@
 			<div class="modal__subtitle">Просто заполните форму заявки</div>
 			<div class="modal__descr">и мы перезвоним вам в течение 10 минут</div>
 			<form class="feed-form feed-form_mt25" action="#">
-				<input name="name" required placeholder="Ваше имя" type=text>
-				<input name="phone" required placeholder="Ваш телефон" type=tel>
-				<input name="email" required placeholder="Ваш E-mail" type=email>
+				<input name="name" placeholder="Ваше имя" type=text>
+				<input name="phone" placeholder="Ваш телефон">
+				<input name="email" placeholder="Ваш E-mail" type=email>
 				<button class="button button_submit button-1">Заказать консультацию</button>
 			</form>
 		</div>
@@ -908,9 +908,9 @@
 			<div class="modal__subtitle">Ваш заказ:</div>
 			<div class="modal__descr">Пульсоментр Polar FT1</div>
 			<form class="feed-form feed-form_mt25" action="#">
-				<input name="name" required placeholder="Ваше имя" type=text>
-				<input name="phone" required placeholder="Ваш телефон" type=tel>
-				<input name="email" required placeholder="Ваш E-mail" type=email>
+				<input name="name" placeholder="Ваше имя" type=text>
+				<input name="phone" placeholder="Ваш телефон">
+				<input name="email" placeholder="Ваш E-mail" type=email>
 				<button class="button button_submit button-1">Заказать консультацию</button>
 			</form>
 		</div>
@@ -925,9 +925,10 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script><!-- Нужно писать путь с https, чтобы пути рабтали, когда будешь открывать просто файл html -->
 
 	<script src="js/slick.min.js"></script>
-
-	<script src="js/script.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/script.js"></script>
+
 <!-- Нужно подключать в определенной последовательности: сначала подключаем библиотеку джейкверри, потом файл данной библиотеки и после 
 того только свои файлы. В другой последовательности работать не будет -->
 </body> 
