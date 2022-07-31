@@ -15,9 +15,9 @@
 	<section id="up" class="promo">
 		<div class="container">
 			<header class="header">
-				<div href="#" class="header__logo">
+				<a href="#" class="header__logo">
 					<img src="icons/logo.png" alt="logo">
-				</div>
+				</a>
 				<div class="header__official">
 					Официальный представитель
 					<span>Garmin, Polar, Suunto</span>
@@ -116,7 +116,7 @@
 		</div>
 	</section>
 
-	<section class="carousel">
+	<div class="carousel">
 		<div class="container"><!-- Нужен, чтобы содержимое отображалось по центру -->
 			<div class="carousel__inner">
 				<div>
@@ -130,7 +130,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<section class="catalog">
 		<div class="container">
@@ -818,7 +818,8 @@
 	<section class="callback">
 		<div class="container">
 			<h2>Отзывы клиентов</h2>
-				<div class="callback__item">
+				<div class="callback__item animate__fadeInUp wow animate__animated" data-wow-duration="2s" data-wow-delay="2s"><!-- animate__animated - Данный класс устанавливается тогда, когда не используется WOW.JS для активации анимации, сейчас анимация активирутеся при помощи плагина, указанного выше -->
+					<!-- НО у меня почему-то так не работает, нужно оставлять все классы -->
 					<img src="img/feed_1.png" alt="">
 					<div class="callback__descr">
 						<div class="callback__name">
@@ -837,7 +838,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="callback__item">
+				<div class="callback__item animate__fadeInUp wow animate__animated" data-wow-duration="2s" data-wow-delay="2s">
 					<img src="img/feed_2.png" alt="">
 					<div class="callback__descr">
 						<div class="callback__name">
@@ -854,7 +855,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="callback__item">
+				<div class="callback__item animate__fadeInUp wow animate__animated" data-wow-duration="2s" data-wow-delay="2s">
 					<img src="img/feed_3.png" alt="">
 					<div class="callback__descr">
 						<div class="callback__name">
@@ -880,7 +881,7 @@
 		<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1122.378166339851!2d37.56452458275194!3d55.76273494846605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a2ce2ad9831%3A0x94fb1ec7052ac3d5!2z0YPQuy4g0JrRgNCw0YHQvdCw0Y8g0J_RgNC10YHQvdGPLCDQtC4gNDQsINGB0YLRgC4gMywg0YEzLCDQnNC-0YHQutCy0LAsIDEyMzAyMg!5e0!3m2!1sru!2sru!4v1654245052444!5m2!1sru!2sru" width="100%" height="630" style="border:0;" allowfullscreen=""></iframe> -->
 		<!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3f9ba927095186da5d9662529cae42d0cd29c37ead197a3d16a64dbdd4e885f7&amp;source=constructor" width="100%" height="630" frameborder="0"></iframe>
 		<div class="footer__info"></div> -->
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3f9ba927095186da5d9662529cae42d0cd29c37ead197a3d16a64dbdd4e885f7&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false"></script>
+		<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3f9ba927095186da5d9662529cae42d0cd29c37ead197a3d16a64dbdd4e885f7&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false"></script>
 		<div class="footer__info">
 			<address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
 			<a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74</a>
@@ -894,7 +895,7 @@
 
 	<div class="overlay">
 		<div class="modal" id="consultation"><!-- id может быть много на сайте, но они не должны повторяться -->
-			<div class="modal__close">&times</div><!-- Мы прописали его, как текстовый символ, по этому. можем его персонализировать -->
+			<div class="modal__close">&times;</div><!-- Мы прописали его, как текстовый символ, по этому. можем его персонализировать -->
 			<div class="modal__subtitle">Просто заполните форму заявки</div>
 			<div class="modal__descr">и мы перезвоним вам в течение 10 минут</div>
 			<form class="feed-form feed-form_mt25" action="#">
@@ -905,7 +906,7 @@
 			</form>
 		</div>
 		<div class="modal" id="order">
-			<div class="modal__close">&times</div><!-- Мы прописали его, как текстовый символ, по этому. можем его персонализировать -->
+			<div class="modal__close">&times;</div><!-- Мы прописали его, как текстовый символ, по этому. можем его персонализировать -->
 			<div class="modal__subtitle">Ваш заказ:</div>
 			<div class="modal__descr">Пульсоментр Polar FT1</div>
 			<form class="feed-form feed-form_mt25" action="#">
@@ -916,7 +917,7 @@
 			</form>
 		</div>
 		<div class="modal modal_mini" id="thanks">
-			<div class="modal__close">&times</div><!-- Мы прописали его, как текстовый символ, по этому. можем его персонализировать up-->
+			<div class="modal__close">&times;</div><!-- Мы прописали его, как текстовый символ, по этому. можем его персонализировать up-->
 			<div class="modal__subtitle">Спасибо за вашу заявку!</div>
 			<div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
 		</div>
@@ -925,8 +926,8 @@
 		<img src="icons/increase.svg" alt="up">
 	</a>
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script><!-- Нужно писать путь с https, чтобы пути рабтали, когда будешь открывать просто файл html -->
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script><!-- Нужно писать путь с https, чтобы пути рабтали, когда будешь открывать просто файл html -->
 
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
