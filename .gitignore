@@ -25,3 +25,4 @@ yarn-error.log*
 
 */sass
 style.css.map
+style.scss
