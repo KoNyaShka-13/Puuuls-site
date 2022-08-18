@@ -12,6 +12,7 @@
 
 src/mailer/smart.php
 
+
 # misc
 .DS_Store
 .env.local
@@ -25,4 +26,5 @@ yarn-error.log*
 
 */sass
 style.css.map
-style.scss
+
+
